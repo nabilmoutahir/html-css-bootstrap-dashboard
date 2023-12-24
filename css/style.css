@@ -1,0 +1,18 @@
+.debug {
+    border: 1px solid black;
+}
+
+/**** HEADER **********************************************/
+/**** NAV BAR *****/
+.header_logo {
+    width: 150px;
+}
+
+/**** MAIN ************************************************/
+#side_bar {
+    width: 100px;
+}
+
+#dashboard {
+    width: calc(100vw - 100px);
+}
