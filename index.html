@@ -18,95 +18,102 @@
 
 <body>
     <header>
-        <nav id="nav_bar" class="debug">
-            <div class="row d-flex align-items-center justify-content-between px-4">
-                <div class="col-2 p-0">
+        <nav>
+            <div id="nav_bar" class="row d-flex align-items-center justify-content-between px-4">
+                <div class="col-1 p-0">
                     <div>
-                        <img class="header_logo" src="./img/logo.svg" alt="">
+                        <img class="img-fluid" src="./img/logo.svg" alt="">
                     </div>
                 </div>
 
-                <div class="col-8">
+                <div class="col-10">
                     <form class="d-flex" role="search">
                         <input class="form-control" type="search" placeholder="Search">
                     </form>
                 </div>
                
-                <div class="col-2">
-                    <div>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
-                            <li class="nav-item">
+                <div class="col-1">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <a href="">
                                 <i class="fa-solid fa-list"></i>
-                            </li>
+                            </a>
+                        </div>
 
-                            <li class="nav-item">
+                        <div>
+                            <a href="">
                                 <i class="fa-solid fa-circle-question"></i>
-                            </li>
+                            </a>
+                        </div>
 
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div>
+                            <a href="">
                                 <i class="fa-solid fa-ellipsis-vertical"></i>
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              </ul>
-                            </li>
+                            </a>
+                        </div>
 
-                            <li class="nav-item">
-                                <a class="nav-link disabled" aria-disabled="true">
-                                    <i class="fa-solid fa-bell"></i>
-                                </a>
-                            </li>
-                        </ul>
+                        <div>
+                            <a href="" class="text-warning" data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-bell"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                            </ul>
+                        </div>
                     </div>    
                 </div>    
             </div>
         </nav>
     </header>
 
-    <main>
-        <div class="d-flex ">
-            <section id="side_bar" class="debug d-flex justify-content-between flex-column justify-content-between py-4">
-                <div class="debug">
-                    <div>
-                        HOME
+    <main class="d-flex">
+            <section id="side_bar" class="d-flex justify-content-between flex-column align-items-center py-4 debug text-white">
+                <div class="">
+                    <div class="">
+                        <i class="fa-solid fa-house side_icons"></i>
+                        <span class="px-1 debug">Home</span>
                     </div>
 
-                    <div>
-                        STATS
+                    <div class="">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="px-1 debug">Stats</span>
                     </div>
 
-                    <div>
-                        SIGNALS
+                    <div class="">
+                        <i class="fa-solid fa-signal"></i>
+                        <span class="px1 debug">Signal</span>
                     </div>
                 </div>
 
-                <div class="debug">
-                    ADMIN
+                <div>
+                    <div>
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Admin</span>
+                    </div>
                 </div>
             </section>
 
-            <section id="dashboard" class="debug container-fluid">
-                <div id="dash_student">
-                    <div class="d-flex justify-content-between">
+            <section id="dashboard">
+                <div id="dash_student" class="bg-primary py-3">
+                    <div class="d-flex justify-content-between text-white">
                         <div>
                             <div>
-                                <span>
+                                <span class="fs-2">
                                     Boolean
                                 </span>
 
-                                <span class="badge text-bg-primary">Piano blaze</span>
+                                <span class="badge top_badge">Piano blaze</span>
                             </div>
 
                             <div>
-                                <span class="badge text-bg-primary">Primary</span>
+                                <span class="badge top_badge">3 app</span>
                                 <span>>></span>
-                                <span class="badge text-bg-primary">Primary</span>
-                                <span class="badge text-bg-primary">Primary</span>
-                                <span class="badge text-bg-primary">Primary</span>
+                                <span class="badge top_badge">Boolean mobile app</span>
+                                <span class="badge top_badge">Boolean web app</span>
+                                <span class="badge top_badge">Boolean blog app</span>
                             </div>
                         </div>
 
@@ -115,7 +122,7 @@
                                 Studenti online negli ultimi 30 minuti
                             </div>
 
-                            <div>
+                            <div class="fs-2">
                                 125
                             </div>
                         </div>
@@ -128,7 +135,7 @@
                     </div>
                 </div>
 
-                <div id="dash_tables">
+                <div id="dash_tables" class=" overflow-auto">
                     <div class="row">
                         <div class="col-9 debug">
                             <div>
@@ -431,7 +438,9 @@
                                         </li>
 
                                         <li class="list-group-item">
-                                            <span>Gennaio: 1200</span>
+                                            <a href="">
+                                                <span>Gennaio: 1200</span>
+                                            </a>    
                                         </li>
                                     </ul>           
                                 </div>
@@ -440,7 +449,6 @@
                     </div>
                 </div>
             </section>
-        </div>
     </main>
 
     <!-- JS -->

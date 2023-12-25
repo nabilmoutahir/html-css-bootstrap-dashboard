@@ -4,15 +4,28 @@
 
 /**** HEADER **********************************************/
 /**** NAV BAR *****/
-.header_logo {
-    width: 150px;
+#nav_bar {
+    height: 60px;
 }
 
 /**** MAIN ************************************************/
 #side_bar {
     width: 100px;
+    height: calc(100vh - 60px);
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
+    background-size: cover;
+}
+
+.top_badge {
+    background-color: #165bba;
 }
 
 #dashboard {
     width: calc(100vw - 100px);
 }
+
+
+
+
+
