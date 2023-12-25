@@ -102,7 +102,7 @@
 
             <section id="dashboard">
                 <div id="dash_student" class="bg-primary py-3">
-                    <div class="d-flex justify-content-between text-white">
+                    <div class="d-flex justify-content-between align-items-center text-white">
                         <div>
                             <div>
                                 <span class="fs-2">
@@ -126,28 +126,47 @@
                                 Studenti online negli ultimi 30 minuti
                             </div>
 
-                            <div class="fs-2">
+                            <div class="fs-3">
                                 125
                             </div>
                         </div>
 
-                        <div>
-                            <div>
+                        <div class="">
+                            <div class="d-inline">
                                 Nuovo Studente
+                            </div>
+
+                            <div class="d-inline">
+                                <button class="border border-2 border-white rounded btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas-header">
+                                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="offcanvas-body">
+                                      <form action="">
+                                        #
+                                      </form>
+                                    </div>
+                                  </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="dash_tables" class=" overflow-auto">
+                <div id="dash_tables" class="container-fluid">
                     <div class="row">
-                        <div class="col-9 debug">
+                        <div class="col-9">
                             <div>
-                                <div>
+                                <div class="bg-light-subtle border rounded-top border-dark-subtle fs-2">
                                     Prossime classi
                                 </div>
 
-                                <div class="d-flex">
+                                <div class="d-flex border border-top-0 rounded-bottom border-dark-subtle">
                                     <table class="table">
                                         <thead>
                                             <tr>
@@ -157,35 +176,59 @@
 
                                         <tbody>
                                             <tr>
-                                                <td>Classe 75</td>
+                                                <td class="d-flex align-items-center">
+                                                    <img class="class_avatar" src="./img/class-avatar.jpg" alt="">
+                                                    <span class="px-2">Classe 75</span>
+                                                </td>
                                             </tr>
 
                                             <tr>
-                                                <td>Classe 75</td>
+                                                <td class="d-flex align-items-center">
+                                                    <img class="class_avatar" src="./img/class-avatar.jpg" alt="">
+                                                    <span class="px-2">Classe 75</span>
+                                                </td>
                                             </tr>
 
                                             <tr>
-                                                <td>Classe 75</td>
+                                                <td class="d-flex align-items-center">
+                                                    <img class="class_avatar" src="./img/class-avatar.jpg" alt="">
+                                                    <span class="px-2">Classe 75</span>
+                                                </td>
                                             </tr>
 
                                             <tr>
-                                                <td>Classe 75</td>
+                                                <td class="d-flex align-items-center">
+                                                    <img class="class_avatar" src="./img/class-avatar.jpg" alt="">
+                                                    <span class="px-2">Classe 75</span>
+                                                </td>
                                             </tr>
 
                                             <tr>
-                                                <td>Classe 75</td>
+                                                <td class="d-flex align-items-center">
+                                                    <img class="class_avatar" src="./img/class-avatar.jpg" alt="">
+                                                    <span class="px-2">Classe 75</span>
+                                                </td>
                                             </tr>
 
                                             <tr>
-                                                <td>Classe 75</td>
+                                                <td class="d-flex align-items-center">
+                                                    <img class="class_avatar" src="./img/class-avatar.jpg" alt="">
+                                                    <span class="px-2">Classe 75</span>
+                                                </td>
                                             </tr>
 
                                             <tr>
-                                                <td>Classe 75</td>
+                                                <td class="d-flex align-items-center">
+                                                    <img class="class_avatar" src="./img/class-avatar.jpg" alt="">
+                                                    <span class="px-2">Classe 75</span>
+                                                </td>
                                             </tr>
-
+                                            
                                             <tr>
-                                                <td>Classe 75</td>
+                                                <td class="d-flex align-items-center">
+                                                    <img class="class_avatar" src="./img/class-avatar.jpg" alt="">
+                                                    <span class="px-2">Classe 75</span>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -342,11 +385,11 @@
                             </div>
 
                             <div>
-                                <div>
+                                <div class="bg-light-subtle border rounded-top border-dark-subtle fs-2">
                                     F.A.Q.
                                 </div>
 
-                                <div class="accordion accordion-flush">
+                                <div class="border border-top-0 rounded-bottom border-dark-subtle accordion accordion-flush">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -394,11 +437,11 @@
 
                         <div class="col-3 p-0 debug">
                             <div>
-                                <div>
+                                <div class="bg-light-subtle border rounded-top border-dark-subtle fs-2">
                                     To Do
                                 </div>
 
-                                <div class="p-3">
+                                <div class="p-3 border border-top-0 rounded-bottom border-dark-subtle">
                                     <ul class="list-group">
                                         <li class="list-group-item">
                                             <input type="checkbox">
@@ -416,8 +459,8 @@
                                 </div>
                             </div>
 
-                            <div>
-                                <div>
+                            <div class="p-3 border rounded border-dark-subtle">
+                                <div class="">
                                     <ul class="list-group">
                                         <li class="list-group-item">
                                             <img src="./img/stats.jpeg" class="img-fluid" alt="">
